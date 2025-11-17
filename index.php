@@ -1,6 +1,79 @@
 <?php 
 include "header.php"; 
 ?>
+<!-- WhatsApp Floating Button -->
+<div id="whatsapp-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</div>
+
+<!-- Popup -->
+<div id="whatsapp-popup">
+    <p>Chat with us on WhatsApp</p>
+    <button id="open-whatsapp">Start Chat</button>
+</div>
+
+<script>
+// Toggle popup
+document.getElementById("whatsapp-btn").addEventListener("click", function () {
+    const popup = document.getElementById("whatsapp-popup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+});
+
+// Redirect to WhatsApp
+document.getElementById("open-whatsapp").addEventListener("click", function () {
+    const phone = "YOUR_NUMBER_HERE"; // ← Add your WhatsApp number here
+    window.open(`https://wa.me/${phone}`, "_blank");
+});
+</script><style>
+/* Floating WhatsApp Button */
+#whatsapp-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+#whatsapp-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Popup Box */
+#whatsapp-popup {
+    position: fixed;
+    bottom: 120px;
+    right: 25px;
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 999;
+}
+
+#whatsapp-popup button {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+</style>
+
+
+
 
 <div class="tronix-template-home">
   <div data-elementor-type="wp-page" data-elementor-id="600" class="elementor elementor-600">
@@ -10,7 +83,7 @@ include "header.php";
       data-id="00ef1ae" data-element_type="section" data-settings='{"background_background":"classic"}'>
       <div class="elementor-background-overlay"></div>
 
-      <div class="elementor-container elementor-column-gap-no">
+      <div class="elementor-container background-colour elementor-column-gap-no">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4d6739d"
           data-id="4d6739d" data-element_type="column">
 
@@ -762,8 +835,12 @@ include "header.php";
 
 <!-- ✅ INLINE CSS -->
 <style>
+
+.background-colour {
+    background: linear-gradient(95deg, #ffffffff, #7aa9f0ff);
+}
 .testimonials-section {
-  background: linear-gradient(180deg, #f9faff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #f9faff 0%, #ffffffff 100%);
 }
 .testimonials-section h2 {
   font-size: 2rem;

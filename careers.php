@@ -1,4 +1,4 @@
-<?php 
+    <?php 
 include"header.php";
  ?>
 			    			<div class="breadcroumb-area">
@@ -16,7 +16,7 @@ include"header.php";
 			</div>
 		</div>
 	
-	<main id="primary" class="site-main content-area">
+	<main id="primary" class="site-main content-area">    
 		<div class="container default">
 			<div class="page-layout">
 				<div class="row">

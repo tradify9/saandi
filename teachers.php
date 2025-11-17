@@ -54,7 +54,7 @@
         <div class="faculty-card p-4 shadow-sm bg-white rounded text-center">
           <img src="https://i.ibb.co/5xnfXW7Y/Picture2.png" alt="Teacher 2" class="faculty-photo mb-3 rounded-circle">
           <h5 class="fw-bold text-dark mb-1">Kavitha S</h5>
-          <p class="text-primary small fw-semibold mb-2"> Teacher</p>
+          <p class="text-primary small fw-semibold mb-2">  Teacher</p>
           <p class="text-secondary small">
            Kavitha S, a dedicated educator with qualifications in M.Com and B.Ed, is a valued member of Saandipini Hi-Tech School. With her strong academic foundation and passion for teaching, she creates an engaging and motivating learning environment for her students. Her commitment to nurturing young minds and her innovative approach to education make her an inspiration within the school community.
 
